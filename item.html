@@ -4,6 +4,11 @@
   <div class='col-md-4'>Description</div>
 </div>
 
+
+<div class='row' ng-if='foundItems.notFound'>
+   <div class='col-md-12 itemcell'>Nothing found!</div> 
+</div>
+
 <div class="row" ng-repeat='item in foundItems.items'>
   <div class='col-md-3 itemcell'>{{item.name}}</div>
   <div class='col-md-3 itemcell'>{{item.short_name}}</div>

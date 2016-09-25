@@ -8,6 +8,7 @@
       templateUrl: 'item.html',
       scope: {
         items: '<items',
+        notFound: '=',
         onRemove: '&'
       },
       controller: FoundItemsController,
