@@ -15,8 +15,11 @@
         narrowCtrl.found = result;
         console.log(narrowCtrl.found);
       });
-
     }
+
+    narrowCtrl.removeItem = function(itemIndex){
+      narrowCtrl.found.splice(itemIndex, 1);
+    };
   }
 
 })();

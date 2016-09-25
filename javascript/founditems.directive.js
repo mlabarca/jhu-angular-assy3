@@ -8,10 +8,12 @@
       templateUrl: 'item.html',
       scope: {
         items: '<items',
+        onRemove: '&'
       },
       controller: FoundItemsController,
       controllerAs: 'foundItems',
-      bindToController: true
+      bindToController: true,
+      transclude: true
     };
 
     return ddo;
